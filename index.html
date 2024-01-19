@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Information Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Andhra Pradesh</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>State Food</h2>
+            <p>Discover the delicious cuisine of Andhra Pradesh.</p>
+            <img src="ap_Food1.jpg" alt="State Food 1">
+            <img src="ap_Food2.jpg" alt="State Food 2">
+            <img src="ap_Food3.jpg" alt="State Food 3">
+        </section>
+
+        <section>
+            <h2>State Dance</h2>
+            <p>Experience the traditional dance forms of Andhra Pradesh.</p>
+            <img src="ap_dance1.jpg" alt="State Dance 1">
+            <img src="ap_dance2.jpg" alt="State Dance 2">
+            <img src="ap_dance3.jpg" alt="State Dance 3">
+        </section>
+
+        <section>
+            <h2>Tourism Places</h2>
+            <ul>
+                <li>Araku Valley, near Visakhapatnam</li>
+                <li>Koringa Wildlife Sanctuary</li>
+                <li>RK Beach, Visakhapatnam</li>
+                <li>Perupalem Beach, near Bhimavaram</li>
+                <li>Tirumala Temple</li>
+            </ul>
+        </section>
+
+        <section id="map-section">
+            <h2>Interactive Map</h2>
+            <p>Explore the map to find more about Andhra Pradesh.</p>
+            <button id="toggleMapBtn" onclick="toggleMap()">Toggle Map</button>
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>For more information, feel free to contact us.</p>
+            <button onclick="location.href='contact.html'">Contact</button>
+        </section>
+    </main>
+
+    <script>
+        function toggleMap() {
+            var mapContainer = document.getElementById("map-section");
+            mapContainer.style.display = (mapContainer.style.display === "none") ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
